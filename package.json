@@ -7,12 +7,12 @@
   "description": "A simple Node app built on Express, instantly up and running.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "build": "node-sass public/style.scss public/style.css"
   },
-  "dependencies": {
-    "express": "^4.16.4",
-    "node-sass-middleware": "^0.11.0"
-  },
+  "pre-commit": [
+    "build"
+  ],
+  "dependencies": {},
   "engines": {
     "node": "8.x"
   },
@@ -24,5 +24,9 @@
     "node",
     "glitch",
     "express"
-  ]
+  ],
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "pre-commit": "^1.2.2"
+  }
 }
