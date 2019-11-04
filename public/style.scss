@@ -178,6 +178,7 @@ hr,
 }
 
 .r-banner {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -186,6 +187,10 @@ hr,
     background: #eee;
     font-size: 0.7em;
     text-align: center;
+
+    @media (min-width: 800px) {
+        display: block;
+    }
 
     @media print {
         display: none;
