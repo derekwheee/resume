@@ -287,6 +287,9 @@ hr,
   padding: 0.25em 0.5em;
   border-radius: 3px;
   background: #eee; }
+  @media print {
+    .r-tag {
+      font-size: 0.8em; } }
   .r-tag.fe {
     background: #66f;
     color: white; }
