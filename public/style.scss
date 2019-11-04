@@ -166,6 +166,10 @@ hr,
     opacity: 0.8;
 }
 
+.r-nobreak {
+    page-break-inside: avoid;
+}
+
 .r-button {
     display: inline-block;
     width: 100%;
@@ -312,6 +316,18 @@ hr,
             font-size: 1em;
         }
     }
+
+    &_tags {
+        margin: 0 0 1em;
+        padding: 1em;
+        background: #f0f0f0;
+
+        @media (min-width: 800px) {
+            max-width: 15em;
+            margin: 0 0 2em 2em;
+            float: right;
+        }
+    }
 }
 
 .r-job {
@@ -375,6 +391,12 @@ hr,
 }
 
 .r-tags {
+    &_header {
+        margin-bottom: 0.5rem;
+        font-size: 0.6em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }
 
 .r-tag {

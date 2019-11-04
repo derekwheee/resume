@@ -131,6 +131,9 @@ hr,
   transform: translateX(-50%);
   opacity: 0.8; }
 
+.r-nobreak {
+  page-break-inside: avoid; }
+
 .r-button {
   display: inline-block;
   width: 100%;
@@ -243,6 +246,15 @@ hr,
     @media print {
       .r-abstract_right {
         font-size: 1em; } }
+  .r-abstract_tags {
+    margin: 0 0 1em;
+    padding: 1em;
+    background: #f0f0f0; }
+    @media (min-width: 800px) {
+      .r-abstract_tags {
+        max-width: 15em;
+        margin: 0 0 2em 2em;
+        float: right; } }
 
 .r-job {
   display: flex;
@@ -286,6 +298,12 @@ hr,
     @media print {
       .r-job_experience {
         margin-top: 0; } }
+
+.r-tags_header {
+  margin-bottom: 0.5rem;
+  font-size: 0.6em;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .r-tag {
   display: inline-block;
